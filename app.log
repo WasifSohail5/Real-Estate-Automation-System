@@ -1,0 +1,80 @@
+2025-09-05 14:31:52,175 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:31:52,175 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:31:52,177 - apscheduler.scheduler - INFO - Added job "MatchingService.run_property_matching" to job store "default"
+2025-09-05 14:31:52,177 - apscheduler.scheduler - INFO - Added job "EmailReplyHandler.check_email_replies" to job store "default"
+2025-09-05 14:31:52,177 - apscheduler.scheduler - INFO - Scheduler started
+2025-09-05 14:31:52,178 - real_estate_api - INFO - Scheduled tasks initialized
+2025-09-05 14:31:52,178 - real_estate_api - INFO - Starting Property Matching and Email Notification Process
+2025-09-05 14:31:52,181 - real_estate_api - INFO - Found 1 active clients
+2025-09-05 14:31:52,181 - real_estate_api - INFO - Processing client: Sohail (ID: 4)
+2025-09-05 14:31:52,183 - real_estate_api - INFO - Found 3 matching properties for Sohail
+2025-09-05 14:31:55,022 - real_estate_api - INFO - Email successfully sent to Sohail (wasifsohail66@gmail.com)
+2025-09-05 14:31:55,023 - real_estate_api - INFO - Property matching and notification process completed
+2025-09-05 14:31:55,025 - real_estate_api - INFO - Application started
+2025-09-05 14:34:03,475 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-09-05 14:34:03,476 - real_estate_api - INFO - Application shutdown
+2025-09-05 14:34:04,693 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:34:04,694 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:34:04,695 - apscheduler.scheduler - INFO - Added job "MatchingService.run_property_matching" to job store "default"
+2025-09-05 14:34:04,695 - apscheduler.scheduler - INFO - Added job "EmailReplyHandler.check_email_replies" to job store "default"
+2025-09-05 14:34:04,695 - apscheduler.scheduler - INFO - Scheduler started
+2025-09-05 14:34:04,696 - real_estate_api - INFO - Scheduled tasks initialized
+2025-09-05 14:34:04,697 - real_estate_api - INFO - Starting Property Matching and Email Notification Process
+2025-09-05 14:34:04,698 - real_estate_api - INFO - Found 1 active clients
+2025-09-05 14:34:04,698 - real_estate_api - INFO - Processing client: Sohail (ID: 4)
+2025-09-05 14:34:04,699 - real_estate_api - INFO - Found 3 matching properties for Sohail
+2025-09-05 14:34:04,967 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:34:04,967 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:34:04,969 - apscheduler.scheduler - INFO - Added job "MatchingService.run_property_matching" to job store "default"
+2025-09-05 14:34:04,969 - apscheduler.scheduler - INFO - Added job "EmailReplyHandler.check_email_replies" to job store "default"
+2025-09-05 14:34:04,969 - apscheduler.scheduler - INFO - Scheduler started
+2025-09-05 14:34:04,971 - real_estate_api - INFO - Scheduled tasks initialized
+2025-09-05 14:34:04,971 - real_estate_api - INFO - Starting Property Matching and Email Notification Process
+2025-09-05 14:34:04,972 - real_estate_api - INFO - Found 1 active clients
+2025-09-05 14:34:04,972 - real_estate_api - INFO - Processing client: Sohail (ID: 4)
+2025-09-05 14:34:04,974 - real_estate_api - INFO - Found 3 matching properties for Sohail
+2025-09-05 14:34:06,914 - real_estate_api - INFO - Email successfully sent to Sohail (wasifsohail66@gmail.com)
+2025-09-05 14:34:06,915 - real_estate_api - INFO - Property matching and notification process completed
+2025-09-05 14:34:06,916 - real_estate_api - INFO - Application started
+2025-09-05 14:34:07,462 - real_estate_api - INFO - Email successfully sent to Sohail (wasifsohail66@gmail.com)
+2025-09-05 14:34:07,463 - real_estate_api - INFO - Property matching and notification process completed
+2025-09-05 14:34:07,463 - real_estate_api - INFO - Application started
+2025-09-05 14:34:11,969 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-09-05 14:34:11,971 - real_estate_api - INFO - Application shutdown
+2025-09-05 14:34:13,231 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:34:13,231 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-05 14:34:13,233 - apscheduler.scheduler - INFO - Added job "MatchingService.run_property_matching" to job store "default"
+2025-09-05 14:34:13,233 - apscheduler.scheduler - INFO - Added job "EmailReplyHandler.check_email_replies" to job store "default"
+2025-09-05 14:34:13,233 - apscheduler.scheduler - INFO - Scheduler started
+2025-09-05 14:34:13,234 - real_estate_api - INFO - Scheduled tasks initialized
+2025-09-05 14:34:13,235 - real_estate_api - INFO - Starting Property Matching and Email Notification Process
+2025-09-05 14:34:13,236 - real_estate_api - INFO - Found 1 active clients
+2025-09-05 14:34:13,236 - real_estate_api - INFO - Processing client: Sohail (ID: 4)
+2025-09-05 14:34:13,238 - real_estate_api - INFO - Found 3 matching properties for Sohail
+2025-09-05 14:34:15,589 - real_estate_api - INFO - Email successfully sent to Sohail (wasifsohail66@gmail.com)
+2025-09-05 14:34:15,591 - real_estate_api - INFO - Property matching and notification process completed
+2025-09-05 14:34:15,592 - real_estate_api - INFO - Application started
+2025-09-05 14:41:09,353 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-09-05 14:41:09,354 - real_estate_api - INFO - Application shutdown
+2025-09-05 14:44:04,696 - apscheduler.executors.default - INFO - Running job "EmailReplyHandler.check_email_replies (trigger: interval[0:10:00], next run at: 2025-09-05 14:44:04 PKT)" (scheduled at 2025-09-05 14:44:04.693097+05:00)
+2025-09-05 14:44:04,696 - real_estate_api - INFO - Checking for email replies from the last 10 minutes...
+2025-09-05 14:44:06,939 - real_estate_api - INFO - Found 5 emails since 05-Sep-2025. Processing...
+2025-09-05 14:44:08,788 - real_estate_api - INFO - Processing email from: wasifsohail66@gmail.com
+2025-09-05 14:44:08,788 - real_estate_api - INFO - Subject: Re: Exclusive Property Matches for Sohail - 3 Properties Found
+2025-09-05 14:44:08,788 - real_estate_api - INFO - Time: 2025-09-05 14:34:49
+2025-09-05 14:44:08,788 - real_estate_api - INFO - Matched to client: Sohail (ID: 4)
+2025-09-05 14:44:08,788 - real_estate_api - INFO - Client shows interest! Scheduling meeting...
+2025-09-05 14:44:08,820 - real_estate_api - ERROR - Error checking email replies: 'sqlite3.Row' object has no attribute 'get'
+2025-09-05 14:44:08,821 - apscheduler.executors.default - INFO - Job "EmailReplyHandler.check_email_replies (trigger: interval[0:10:00], next run at: 2025-09-05 14:54:04 PKT)" executed successfully
+2025-09-05 14:54:04,702 - apscheduler.executors.default - INFO - Running job "EmailReplyHandler.check_email_replies (trigger: interval[0:10:00], next run at: 2025-09-05 15:04:04 PKT)" (scheduled at 2025-09-05 14:54:04.693097+05:00)
+2025-09-05 14:54:04,704 - real_estate_api - INFO - Checking for email replies from the last 10 minutes...
+2025-09-05 14:54:06,921 - real_estate_api - INFO - Found 6 emails since 05-Sep-2025. Processing...
+2025-09-05 14:54:09,005 - real_estate_api - INFO - Processing email from: wasifsohail66@gmail.com
+2025-09-05 14:54:09,006 - real_estate_api - INFO - Subject: Re: Exclusive Property Matches for Sohail - 3 Properties Found
+2025-09-05 14:54:09,006 - real_estate_api - INFO - Time: 2025-09-05 14:51:03
+2025-09-05 15:04:04,704 - apscheduler.scheduler - WARNING - Execution of job "EmailReplyHandler.check_email_replies (trigger: interval[0:10:00], next run at: 2025-09-05 15:04:04 PKT)" skipped: maximum number of running instances reached (1)
+2025-09-05 15:57:44,820 - apscheduler.scheduler - WARNING - Execution of job "EmailReplyHandler.check_email_replies (trigger: interval[0:10:00], next run at: 2025-09-05 15:14:04 PKT)" skipped: maximum number of running instances reached (1)
+2025-09-05 15:57:44,820 - real_estate_api - INFO - Matched to client: Sohail (ID: 4)
+2025-09-05 15:57:44,820 - real_estate_api - INFO - Client shows interest! Scheduling meeting...
+2025-09-05 15:57:44,846 - real_estate_api - ERROR - Error checking email replies: 'sqlite3.Row' object has no attribute 'get'
+2025-09-05 15:57:44,846 - apscheduler.executors.default - INFO - Job "EmailReplyHandler.check_email_replies (trigger: interval[0:10:00], next run at: 2025-09-05 16:04:04 PKT)" executed successfully

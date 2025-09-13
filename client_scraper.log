@@ -1,0 +1,622 @@
+2025-09-04 23:17:58,335 - INFO - ================================================================================
+2025-09-04 23:17:58,336 - INFO - Real Estate Client Data Scraper - Enhanced Edition
+2025-09-04 23:17:58,336 - INFO - ================================================================================
+2025-09-04 23:17:58,337 - INFO - Current time: 2025-09-04 23:17:58
+2025-09-04 23:17:58,387 - INFO - 
+Starting OLX scraping...
+2025-09-04 23:17:58,413 - INFO - Starting OLX scraping...
+2025-09-04 23:19:00,152 - INFO - patching driver executable C:\Users\wasif\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-09-04 23:19:08,756 - ERROR - Error during OLX scraping: Message: session not created: cannot connect to chrome at 127.0.0.1:51468
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.139; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0xc2d283+66419]
+	GetHandleVerifier [0x0xc2d2c4+66484]
+	(No symbol) [0x0xa04bd3]
+	(No symbol) [0x0xa3fc48]
+	(No symbol) [0x0xa3ec29]
+	(No symbol) [0x0xa34e6f]
+	(No symbol) [0x0xa34c96]
+	(No symbol) [0x0xa7cce4]
+	(No symbol) [0x0xa7c5ea]
+	(No symbol) [0x0xa70e16]
+	(No symbol) [0x0xa425ce]
+	(No symbol) [0x0xa434a4]
+	GetHandleVerifier [0x0xe75ec3+2461619]
+	GetHandleVerifier [0x0xe70f46+2441270]
+	GetHandleVerifier [0x0xc56222+234258]
+	GetHandleVerifier [0x0xc461e8+168664]
+	GetHandleVerifier [0x0xc4d18d+197245]
+	GetHandleVerifier [0x0xc355d8+100040]
+	GetHandleVerifier [0x0xc35772+100450]
+	GetHandleVerifier [0x0xc1f72a+10266]
+	BaseThreadInitThunk [0x0x76b65d49+25]
+	RtlInitializeExceptionChain [0x0x777ad6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x777ad661+561]
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 148, in scrape_olx_wanted
+    driver = get_undetected_chrome_driver(headless=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 119, in get_undetected_chrome_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 263, in __init__
+    self.start_session(capabilities)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 366, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:51468
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.139; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0xc2d283+66419]
+	GetHandleVerifier [0x0xc2d2c4+66484]
+	(No symbol) [0x0xa04bd3]
+	(No symbol) [0x0xa3fc48]
+	(No symbol) [0x0xa3ec29]
+	(No symbol) [0x0xa34e6f]
+	(No symbol) [0x0xa34c96]
+	(No symbol) [0x0xa7cce4]
+	(No symbol) [0x0xa7c5ea]
+	(No symbol) [0x0xa70e16]
+	(No symbol) [0x0xa425ce]
+	(No symbol) [0x0xa434a4]
+	GetHandleVerifier [0x0xe75ec3+2461619]
+	GetHandleVerifier [0x0xe70f46+2441270]
+	GetHandleVerifier [0x0xc56222+234258]
+	GetHandleVerifier [0x0xc461e8+168664]
+	GetHandleVerifier [0x0xc4d18d+197245]
+	GetHandleVerifier [0x0xc355d8+100040]
+	GetHandleVerifier [0x0xc35772+100450]
+	GetHandleVerifier [0x0xc1f72a+10266]
+	BaseThreadInitThunk [0x0x76b65d49+25]
+	RtlInitializeExceptionChain [0x0x777ad6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x777ad661+561]
+
+2025-09-04 23:19:08,886 - INFO - 
+Starting Zameen.com scraping...
+2025-09-04 23:19:08,900 - INFO - Starting Zameen.com wanted ads scraping...
+2025-09-04 23:19:09,065 - INFO - ====== WebDriver manager ======
+2025-09-04 23:19:10,408 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-04 23:19:10,729 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-04 23:19:10,988 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-04 23:19:12,139 - INFO - WebDriver version 139.0.7258.154 selected
+2025-09-04 23:19:12,159 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/win32/chromedriver-win32.zip
+2025-09-04 23:19:12,159 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/win32/chromedriver-win32.zip
+2025-09-04 23:19:13,852 - INFO - Driver downloading response is 200
+2025-09-04 23:20:10,097 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-04 23:20:10,554 - INFO - Driver has been saved in cache [C:\Users\wasif\.wdm\drivers\chromedriver\win64\139.0.7258.154]
+2025-09-04 23:20:17,193 - INFO - Processing Zameen.com wanted ads page 1
+2025-09-04 23:20:32,671 - WARNING - Timeout waiting for Zameen.com listings on page 1
+2025-09-04 23:20:48,035 - WARNING - Could not find listings on page 1
+2025-09-04 23:20:53,265 - INFO - Processing Zameen.com wanted ads page 2
+2025-09-04 23:21:08,323 - WARNING - Timeout waiting for Zameen.com listings on page 2
+2025-09-04 23:21:23,693 - WARNING - Could not find listings on page 2
+2025-09-04 23:21:28,478 - INFO - Processing Zameen.com wanted ads page 3
+2025-09-04 23:21:43,495 - WARNING - Timeout waiting for Zameen.com listings on page 3
+2025-09-04 23:21:58,814 - WARNING - Could not find listings on page 3
+2025-09-04 23:22:04,105 - INFO - Processing Zameen.com wanted ads page 4
+2025-09-04 23:22:19,132 - WARNING - Timeout waiting for Zameen.com listings on page 4
+2025-09-04 23:22:34,447 - WARNING - Could not find listings on page 4
+2025-09-04 23:22:39,271 - INFO - Processing Zameen.com wanted ads page 5
+2025-09-04 23:22:54,714 - WARNING - Timeout waiting for Zameen.com listings on page 5
+2025-09-04 23:23:10,004 - WARNING - Could not find listings on page 5
+2025-09-04 23:23:15,017 - INFO - Processing Zameen.com wanted ads page 6
+2025-09-04 23:23:30,385 - WARNING - Timeout waiting for Zameen.com listings on page 6
+2025-09-04 23:23:45,423 - WARNING - Could not find listings on page 6
+2025-09-04 23:23:49,878 - INFO - Processing Zameen.com wanted ads page 7
+2025-09-04 23:24:04,904 - WARNING - Timeout waiting for Zameen.com listings on page 7
+2025-09-04 23:24:20,411 - WARNING - Could not find listings on page 7
+2025-09-04 23:24:22,609 - INFO - 
+Starting Graana.com scraping...
+2025-09-04 23:24:22,624 - INFO - Starting Graana.com scraping...
+2025-09-04 23:24:22,685 - INFO - ====== WebDriver manager ======
+2025-09-04 23:24:23,778 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-04 23:24:24,215 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-04 23:24:24,500 - INFO - Driver [C:\Users\wasif\.wdm\drivers\chromedriver\win64\139.0.7258.154\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-04 23:24:36,317 - INFO - Scraping Graana.com islamabad rental listings
+2025-09-04 23:24:51,739 - WARNING - Timeout waiting for Graana.com listings for islamabad
+2025-09-04 23:24:59,882 - INFO - Scraping Graana.com rawalpindi rental listings
+2025-09-04 23:25:15,233 - WARNING - Timeout waiting for Graana.com listings for rawalpindi
+2025-09-04 23:25:28,021 - INFO - Scraping Graana.com lahore rental listings
+2025-09-04 23:25:43,076 - WARNING - Timeout waiting for Graana.com listings for lahore
+2025-09-04 23:25:54,216 - INFO - Scraping Graana.com karachi rental listings
+2025-09-04 23:26:09,674 - WARNING - Timeout waiting for Graana.com listings for karachi
+2025-09-04 23:26:11,876 - INFO - 
+Starting property forums scraping...
+2025-09-04 23:26:11,890 - INFO - Starting property forums scraping...
+2025-09-04 23:26:16,502 - ERROR - Failed to access forum: 404
+2025-09-04 23:26:16,524 - INFO - 
+Skipping Facebook scraping (requires credentials)
+2025-09-04 23:26:16,524 - INFO - 
+Scraping summary:
+2025-09-04 23:26:16,524 - INFO - - OLX: 0 clients found
+2025-09-04 23:26:16,524 - INFO - - Zameen.com: 0 clients found
+2025-09-04 23:26:16,524 - INFO - - Graana.com: 0 clients found
+2025-09-04 23:26:16,524 - INFO - - Property Forums: 0 clients found
+2025-09-04 23:26:16,524 - INFO - Total clients found: 0
+2025-09-04 23:26:16,524 - INFO - Total clients in database: 0
+2025-09-04 23:26:16,524 - INFO - 
+Scraping completed successfully!
+2025-09-05 10:32:54,904 - INFO - ================================================================================
+2025-09-05 10:32:54,904 - INFO - Real Estate Client Data Scraper - Enhanced Edition
+2025-09-05 10:32:54,904 - INFO - ================================================================================
+2025-09-05 10:32:54,904 - INFO - Current time: 2025-09-05 10:32:54
+2025-09-05 10:32:54,905 - INFO - 
+Starting OLX scraping...
+2025-09-05 10:32:54,985 - INFO - Starting OLX scraping...
+2025-09-05 10:32:57,199 - ERROR - Error during OLX scraping: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:992)>
+Traceback (most recent call last):
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1454, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 148, in scrape_olx_wanted
+    driver = get_undetected_chrome_driver(headless=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 119, in get_undetected_chrome_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 175, in auto
+    release = self.fetch_release_number()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 250, in fetch_release_number
+    with urlopen(self.url_repo + path) as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:992)>
+2025-09-05 10:32:57,240 - INFO - 
+Starting Zameen.com scraping...
+2025-09-05 10:32:57,260 - INFO - Starting Zameen.com wanted ads scraping...
+2025-09-05 10:32:57,394 - INFO - ====== WebDriver manager ======
+2025-09-05 10:33:00,140 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-05 10:33:01,966 - ERROR - Error during Zameen.com scraping: Could not reach host. Are you offline?
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:992)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:992)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\http.py", line 32, in get
+    resp = requests.get(
+           ^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:992)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 435, in scrape_zameen_wanted
+    driver = get_selenium_driver(headless=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 136, in get_selenium_driver
+    service = Service(ChromeDriverManager().install())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\manager.py", line 35, in _get_driver_binary_path
+    binary_path = self._cache_manager.find_driver(driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 107, in find_driver
+    driver_version = self.get_cache_key_driver_version(driver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 154, in get_cache_key_driver_version
+    return driver.get_driver_version_to_download()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\driver.py", line 48, in get_driver_version_to_download
+    return self.get_latest_release_version()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\drivers\chrome.py", line 59, in get_latest_release_version
+    response = self._http_client.get(url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\http.py", line 35, in get
+    raise exceptions.ConnectionError(f"Could not reach host. Are you offline?")
+requests.exceptions.ConnectionError: Could not reach host. Are you offline?
+2025-09-05 10:33:02,025 - INFO - 
+Starting Graana.com scraping...
+2025-09-05 10:33:02,042 - INFO - Starting Graana.com scraping...
+2025-09-05 10:33:02,102 - INFO - ====== WebDriver manager ======
+2025-09-05 10:33:03,258 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-05 10:33:15,424 - ERROR - Error during Graana.com scraping: Could not reach host. Are you offline?
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10051] A socket operation was attempted to an unreachable network
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001C5BD874B90>: Failed to establish a new connection: [WinError 10051] A socket operation was attempted to an unreachable network
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001C5BD874B90>: Failed to establish a new connection: [WinError 10051] A socket operation was attempted to an unreachable network'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\http.py", line 32, in get
+    resp = requests.get(
+           ^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001C5BD874B90>: Failed to establish a new connection: [WinError 10051] A socket operation was attempted to an unreachable network'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 560, in scrape_graana
+    driver = get_selenium_driver(headless=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 136, in get_selenium_driver
+    service = Service(ChromeDriverManager().install())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\manager.py", line 35, in _get_driver_binary_path
+    binary_path = self._cache_manager.find_driver(driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 107, in find_driver
+    driver_version = self.get_cache_key_driver_version(driver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 154, in get_cache_key_driver_version
+    return driver.get_driver_version_to_download()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\driver.py", line 48, in get_driver_version_to_download
+    return self.get_latest_release_version()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\drivers\chrome.py", line 59, in get_latest_release_version
+    response = self._http_client.get(url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\webdriver_manager\core\http.py", line 35, in get
+    raise exceptions.ConnectionError(f"Could not reach host. Are you offline?")
+requests.exceptions.ConnectionError: Could not reach host. Are you offline?
+2025-09-05 10:33:15,483 - INFO - 
+Starting property forums scraping...
+2025-09-05 10:33:15,521 - INFO - Starting property forums scraping...
+2025-09-05 10:33:15,661 - ERROR - Error during forum scraping: HTTPSConnectionPool(host='defence.pk', port=443): Max retries exceeded with url: /pdf/forums/real-estate.142/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5BDC25190>: Failed to resolve 'defence.pk' ([Errno 11001] getaddrinfo failed)"))
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wasif\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 961, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001C5BDC25190>: Failed to resolve 'defence.pk' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='defence.pk', port=443): Max retries exceeded with url: /pdf/forums/real-estate.142/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5BDC25190>: Failed to resolve 'defence.pk' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 698, in scrape_property_forums
+    response = requests.get(forum_url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='defence.pk', port=443): Max retries exceeded with url: /pdf/forums/real-estate.142/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5BDC25190>: Failed to resolve 'defence.pk' ([Errno 11001] getaddrinfo failed)"))
+2025-09-05 10:33:15,702 - INFO - 
+Skipping Facebook scraping (requires credentials)
+2025-09-05 10:33:15,702 - INFO - 
+Scraping summary:
+2025-09-05 10:33:15,703 - INFO - - OLX: 0 clients found
+2025-09-05 10:33:15,703 - INFO - - Zameen.com: 0 clients found
+2025-09-05 10:33:15,703 - INFO - - Graana.com: 0 clients found
+2025-09-05 10:33:15,703 - INFO - - Property Forums: 0 clients found
+2025-09-05 10:33:15,703 - INFO - Total clients found: 0
+2025-09-05 10:33:15,704 - INFO - Total clients in database: 0
+2025-09-05 10:33:15,704 - INFO - 
+Scraping completed successfully!
+2025-09-05 10:33:26,253 - INFO - ================================================================================
+2025-09-05 10:33:26,254 - INFO - Real Estate Client Data Scraper - Enhanced Edition
+2025-09-05 10:33:26,254 - INFO - ================================================================================
+2025-09-05 10:33:26,254 - INFO - Current time: 2025-09-05 10:33:26
+2025-09-05 10:33:26,255 - INFO - 
+Starting OLX scraping...
+2025-09-05 10:33:26,273 - INFO - Starting OLX scraping...
+2025-09-05 10:33:45,321 - INFO - patching driver executable C:\Users\wasif\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-09-05 10:33:52,787 - ERROR - Error during OLX scraping: Message: session not created: cannot connect to chrome at 127.0.0.1:52914
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.139; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0xebd283+66419]
+	GetHandleVerifier [0x0xebd2c4+66484]
+	(No symbol) [0x0xc94bd3]
+	(No symbol) [0x0xccfc48]
+	(No symbol) [0x0xccec29]
+	(No symbol) [0x0xcc4e6f]
+	(No symbol) [0x0xcc4c96]
+	(No symbol) [0x0xd0cce4]
+	(No symbol) [0x0xd0c5ea]
+	(No symbol) [0x0xd00e16]
+	(No symbol) [0x0xcd25ce]
+	(No symbol) [0x0xcd34a4]
+	GetHandleVerifier [0x0x1105ec3+2461619]
+	GetHandleVerifier [0x0x1100f46+2441270]
+	GetHandleVerifier [0x0xee6222+234258]
+	GetHandleVerifier [0x0xed61e8+168664]
+	GetHandleVerifier [0x0xedd18d+197245]
+	GetHandleVerifier [0x0xec55d8+100040]
+	GetHandleVerifier [0x0xec5772+100450]
+	GetHandleVerifier [0x0xeaf72a+10266]
+	BaseThreadInitThunk [0x0x76b65d49+25]
+	RtlInitializeExceptionChain [0x0x777ad6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x777ad661+561]
+Traceback (most recent call last):
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 148, in scrape_olx_wanted
+    driver = get_undetected_chrome_driver(headless=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\Real_State_Automation\client_scraper.py", line 119, in get_undetected_chrome_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 263, in __init__
+    self.start_session(capabilities)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 366, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "E:\BSAI-5th\DataMining\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:52914
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.139; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0xebd283+66419]
+	GetHandleVerifier [0x0xebd2c4+66484]
+	(No symbol) [0x0xc94bd3]
+	(No symbol) [0x0xccfc48]
+	(No symbol) [0x0xccec29]
+	(No symbol) [0x0xcc4e6f]
+	(No symbol) [0x0xcc4c96]
+	(No symbol) [0x0xd0cce4]
+	(No symbol) [0x0xd0c5ea]
+	(No symbol) [0x0xd00e16]
+	(No symbol) [0x0xcd25ce]
+	(No symbol) [0x0xcd34a4]
+	GetHandleVerifier [0x0x1105ec3+2461619]
+	GetHandleVerifier [0x0x1100f46+2441270]
+	GetHandleVerifier [0x0xee6222+234258]
+	GetHandleVerifier [0x0xed61e8+168664]
+	GetHandleVerifier [0x0xedd18d+197245]
+	GetHandleVerifier [0x0xec55d8+100040]
+	GetHandleVerifier [0x0xec5772+100450]
+	GetHandleVerifier [0x0xeaf72a+10266]
+	BaseThreadInitThunk [0x0x76b65d49+25]
+	RtlInitializeExceptionChain [0x0x777ad6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x777ad661+561]
+
+2025-09-05 10:33:52,826 - INFO - 
+Starting Zameen.com scraping...
+2025-09-05 10:33:52,859 - INFO - Starting Zameen.com wanted ads scraping...
+2025-09-05 10:33:52,974 - INFO - ====== WebDriver manager ======
+2025-09-05 10:33:54,359 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-05 10:33:55,351 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-05 10:33:55,644 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-05 10:33:58,080 - INFO - WebDriver version 139.0.7258.154 selected
+2025-09-05 10:33:58,087 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/win32/chromedriver-win32.zip
+2025-09-05 10:33:58,087 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/win32/chromedriver-win32.zip
+2025-09-05 10:34:00,108 - INFO - Driver downloading response is 200
+2025-09-05 10:34:39,305 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-05 10:34:44,156 - INFO - Driver has been saved in cache [C:\Users\wasif\.wdm\drivers\chromedriver\win64\139.0.7258.154]
+2025-09-05 10:34:56,689 - INFO - Processing Zameen.com wanted ads page 1
+2025-09-05 10:35:12,188 - WARNING - Timeout waiting for Zameen.com listings on page 1
+2025-09-05 10:35:27,559 - WARNING - Could not find listings on page 1
+2025-09-05 10:35:56,511 - INFO - Processing Zameen.com wanted ads page 2
+2025-09-05 10:36:11,525 - WARNING - Timeout waiting for Zameen.com listings on page 2
+2025-09-05 10:36:26,827 - WARNING - Could not find listings on page 2
+2025-09-05 10:36:34,288 - INFO - Processing Zameen.com wanted ads page 3
+2025-09-05 10:36:49,789 - WARNING - Timeout waiting for Zameen.com listings on page 3
+2025-09-05 10:37:05,132 - WARNING - Could not find listings on page 3
+2025-09-05 10:37:45,648 - INFO - Processing Zameen.com wanted ads page 4
+2025-09-05 10:38:00,661 - WARNING - Timeout waiting for Zameen.com listings on page 4

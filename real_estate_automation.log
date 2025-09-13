@@ -1,0 +1,61 @@
+2025-09-05 11:34:48,450 - INFO - ================================================================================
+2025-09-05 11:34:48,451 - INFO - Starting Integrated Real Estate Automation System
+2025-09-05 11:34:48,451 - INFO - ================================================================================
+2025-09-05 11:34:48,451 - INFO - Current time: 2025-09-05 11:34:48
+2025-09-05 11:34:48,452 - INFO - Database path: E:\BSAI-5th\DataMining\Real_State_Automation\real_estate.db
+2025-09-05 11:34:48,452 - INFO - Property matching interval: 60 minutes
+2025-09-05 11:34:48,452 - INFO - Email checking interval: 10 minutes
+2025-09-05 11:34:48,453 - INFO - ================================================================================
+2025-09-05 11:34:48,461 - INFO - Real Estate Automation System initialized
+2025-09-05 11:34:48,462 - INFO - Running initial property matching...
+2025-09-05 11:34:48,462 - INFO - Starting Property Matching and Notification Process
+2025-09-05 11:34:48,483 - INFO - Found 1 active clients for property matching
+2025-09-05 11:34:48,483 - INFO - Processing client: Faizan (ID: 3)
+2025-09-05 11:34:48,486 - INFO - No matching properties found for Faizan
+2025-09-05 11:34:48,486 - INFO - Property matching and notification process completed
+2025-09-05 11:34:48,486 - INFO - Starting main automation loop...
+2025-09-05 11:34:48,486 - INFO - Running property matching cycle...
+2025-09-05 11:34:48,487 - INFO - Starting Property Matching and Notification Process
+2025-09-05 11:34:48,488 - INFO - Found 1 active clients for property matching
+2025-09-05 11:34:48,488 - INFO - Processing client: Faizan (ID: 3)
+2025-09-05 11:34:48,490 - INFO - No matching properties found for Faizan
+2025-09-05 11:34:48,490 - INFO - Property matching and notification process completed
+2025-09-05 11:34:48,490 - INFO - Checking for email replies...
+2025-09-05 11:34:48,491 - INFO - Checking for email replies from the last 10 minutes...
+2025-09-05 11:34:51,068 - INFO - No new replies found in the last 10 minutes
+2025-09-05 11:37:04,015 - INFO - Received keyboard interrupt, shutting down...
+2025-09-05 11:37:04,016 - INFO - Database connection closed
+2025-09-05 11:37:04,016 - INFO - Integrated Real Estate Automation System shutdown complete
+2025-09-05 11:37:10,250 - INFO - ================================================================================
+2025-09-05 11:37:10,251 - INFO - Starting Integrated Real Estate Automation System
+2025-09-05 11:37:10,251 - INFO - ================================================================================
+2025-09-05 11:37:10,251 - INFO - Current time: 2025-09-05 11:37:10
+2025-09-05 11:37:10,251 - INFO - Database path: E:\BSAI-5th\DataMining\Real_State_Automation\real_estate.db
+2025-09-05 11:37:10,251 - INFO - Property matching interval: 60 minutes
+2025-09-05 11:37:10,251 - INFO - Email checking interval: 10 minutes
+2025-09-05 11:37:10,251 - INFO - ================================================================================
+2025-09-05 11:37:10,252 - INFO - Real Estate Automation System initialized
+2025-09-05 11:37:10,252 - INFO - Running initial property matching...
+2025-09-05 11:37:10,252 - INFO - Starting Property Matching and Notification Process
+2025-09-05 11:37:10,253 - INFO - Found 1 active clients for property matching
+2025-09-05 11:37:10,253 - INFO - Processing client: Faizan (ID: 3)
+2025-09-05 11:37:10,256 - INFO - No matching properties found for Faizan
+2025-09-05 11:37:10,256 - INFO - Property matching and notification process completed
+2025-09-05 11:37:10,256 - INFO - Starting main automation loop...
+2025-09-05 11:37:10,256 - INFO - Running property matching cycle...
+2025-09-05 11:37:10,256 - INFO - Starting Property Matching and Notification Process
+2025-09-05 11:37:10,257 - INFO - Found 1 active clients for property matching
+2025-09-05 11:37:10,257 - INFO - Processing client: Faizan (ID: 3)
+2025-09-05 11:37:10,259 - INFO - No matching properties found for Faizan
+2025-09-05 11:37:10,259 - INFO - Property matching and notification process completed
+2025-09-05 11:37:10,259 - INFO - Checking for email replies...
+2025-09-05 11:37:10,259 - INFO - Checking for email replies from the last 10 minutes...
+2025-09-05 11:37:12,489 - INFO - Found 1 emails since 05-Sep-2025. Processing...
+2025-09-05 11:37:12,905 - INFO - Processing email from: wasifsohail456@gmail.com
+2025-09-05 11:37:12,906 - INFO - Subject: Re: Exclusive Property Matches for Wasif - 3 Properties Found
+2025-09-05 11:37:12,907 - INFO - Matched to client: Wasif (ID: 1)
+2025-09-05 11:37:15,825 - INFO - Meeting scheduled for Wasif on 2025-09-09 at 16:00
+2025-09-05 11:37:15,825 - INFO - Processed 1 emails from the last 10 minutes
+2025-09-05 11:46:08,572 - INFO - Received keyboard interrupt, shutting down...
+2025-09-05 11:46:08,573 - INFO - Database connection closed
+2025-09-05 11:46:08,573 - INFO - Integrated Real Estate Automation System shutdown complete

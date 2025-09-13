@@ -1,0 +1,10 @@
+2025-09-04 14:35:28,123 - client_matching - INFO - Connected to database: E:\BSAI-5th\DataMining\Real_State_Automation\real_estate.db
+2025-09-04 14:35:28,137 - client_matching - INFO - Found existing property_leads table. Good!
+2025-09-04 14:35:28,185 - client_matching - INFO - Database tables set up successfully
+2025-09-04 14:35:28,186 - client_matching - INFO - Found 0 existing clients in database
+2025-09-04 14:37:42,340 - client_matching - INFO - Added new client with ID 1: wasif
+2025-09-04 14:37:42,356 - client_matching - INFO - Found 1 potential matches for client 1
+2025-09-04 14:38:48,501 - client_matching - INFO - Found 1 potential matches for client 1
+2025-09-04 14:39:57,745 - client_matching - INFO - Sending WhatsApp to +923139379987 about property 1
+2025-09-04 14:39:57,747 - client_matching - ERROR - Error sending WhatsApp notification: Call Time must be Greater than Wait Time as WhatsApp Web takes some Time to Load!
+2025-09-04 14:39:57,763 - client_matching - INFO - Sent 0 match notifications
